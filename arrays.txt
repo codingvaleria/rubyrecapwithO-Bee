@@ -1,0 +1,29 @@
+Access and manipulate data in arrays in Ruby
+    Definition- arrays are used to store lists of data (which can be any data type, and even multiple types of data within the same array) in a specific order.
+
+Array CRUD
+    Read - bracket notation
+         - .methods(.first, .last, .length, .size)
+         - range notation (..); (...)
+         - include? - returns a boolean
+         - uniq
+         
+    update - bracket notation
+            - Adding elements (shovel, unshift)
+           - Combine arrays (concat vs plus)
+           -(reverse vs reverse!- changes the original array)
+           - insert(index, value)
+
+    Delete - (pop, shift, drop, delete)
+    create - Array.new
+    add every element ina n array(.sum)
+  
+
+Special Array syntax
+    %w to create an array of strings
+    %i to create an array of symbols
+
+iterating over arrays(enumerable)
+.map/collect - return a new array, usually by transforming (mapping) the values to some new value.
+.find/detect
+.filter/find_all/select

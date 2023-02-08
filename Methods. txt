@@ -1,0 +1,32 @@
+define methods with parameters
+Call methods and their return values
+    a method is a special sub-category of functions that must be called on some object. 
+    Optional use of parenthesis("Is this a variable, or is this a method?")
+    whatever the last line of a method is will be its return value
+
+    def my_method(param)
+        puts "Running my method"
+        param + 1
+    end
+
+Method Arguments
+    when we run a method without passing in the required arguments(argument error) it will give us an error message:
+    Default arguments
+        def say_hi(name = "Rubyist")
+            puts "Hi there, #{name}!"
+        end
+
+        say_hi
+            # => "Hi there, Rubyist!"
+
+        say_hi "Sunny"
+            # => "Hi there, Sunny!"
+
+Return values
+    Ruby returns a value by default. This returned value will be the value of the last statement:
+
+The return keyword
+    to explicitly return what you want returned.
+    he return keyword will disrupt the execution of your method, and prevent Ruby from running any lines of code after the return keyword.
+
+    if valentines bring a gift else if my birthday take me out, else our anniversary we take a vacation else we break up
