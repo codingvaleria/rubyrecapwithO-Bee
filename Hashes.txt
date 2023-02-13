@@ -1,0 +1,23 @@
+Hashes
+- composed of key value pairs
+Creating Hashes
+    -Hash.new
+    -key value pairs in curly braces - creates a hash with symbols as keys
+    -use bracket notation to assign a new value to a key
+    -or assign a new key value pair
+    -symbols can be used as a key
+    -Keys can be of any data type.- use a rocket if strings
+
+
+
+Accessing data
+    -using bracket notation
+    -returns null if key does not exist
+    N/B - bracket notation does not work
+
+Methods
+.delete(key)
+.keys - to access all the keys in the hash
+.values - to access all values
+.empty? - to ceck if there are no key value pairs on the hash
+.merge - to join multiple hashes

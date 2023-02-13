@@ -182,3 +182,5 @@ def sum(numbers)
             return totalofArray
     end
 end
+
+puts "There was once a man named " + character_name, "his age was " + (character_age).to_s
