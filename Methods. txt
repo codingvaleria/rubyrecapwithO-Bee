@@ -1,4 +1,5 @@
 define methods with parameters
+
 Call methods and their return values
     a method is a special sub-category of functions that must be called on some object. 
     Optional use of parenthesis("Is this a variable, or is this a method?")
@@ -30,3 +31,17 @@ The return keyword
     he return keyword will disrupt the execution of your method, and prevent Ruby from running any lines of code after the return keyword.
 
     if valentines bring a gift else if my birthday take me out, else our anniversary we take a vacation else we break up
+
+Define global variables with $sign, call them with $ within the method too.
+
+Calling other methods
+ define them as parameters and call them as variables 
+  e.g 
+        def my_name
+            name
+        end
+
+        def say_name (my_name)
+            "my name is #{my_name}
+        end
+
