@@ -16,9 +16,29 @@ Accessing data
 
 Methods
 .delete(key)
+.delete_at(index) - delete at index
 .keys - to access all the keys in the hash
 .values - to access all values
-.empty? - to ceck if there are no key value pairs on the hash
+.empty? - to check if there are no key value pairs on the hash
 .merge - to join multiple hashes
+.merge!
+
+! used to destruct originals
+
+Nested Hashes
+-CRUD
 
 
+person = [{:name=>"Valeria",
+  :age=>12,
+  :address=>{:town=>"Meru", :street=>"12th street", :country=>"Kenya"},
+  :profession=>"Economist & Developer"},
+ {:name=>"Brainy",
+  :age=>35,
+  :address=>
+   {:town=>"Nairobi",
+    :street=>"Awesome street",
+    :country=>"Not Kenyan"},
+  :profession=>"Software dev"},
+ {:town=>"Meru", :food=>"Burger"},
+ 4]
