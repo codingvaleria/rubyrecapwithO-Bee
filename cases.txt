@@ -1,0 +1,67 @@
+weather
+if its sunny wear sunscreen 
+if its rainy carry umbrella
+if its cloudy carry sweater
+
+let weather = "sunny"
+
+if (weather === "sunny"){
+    console.log("wear sunscreen")
+}else{
+    console.log ("carry umbrella")
+}
+
+#Ruby
+weather = "sunny"
+
+if weather == "sunny"
+    puts "wear sunscreen"
+else
+    puts "carry umbrella"
+end
+
+weather = "cloudy"
+weather == "sunny" ? "wear sunscreen" : "carry umbrella"
+
+
+if weather == "sunny"
+    puts "wear sunscreen"
+elsif weather == "umbrella"
+    puts "carry umbrella"
+elsif weather == "cloudy"
+    puts "carry sweater"
+else
+    puts "the coast is clear"
+end
+
+numbers = [3,4,5,6,7]
+
+def sum(numbers)
+     if (numbers.length <= 0){
+        return 0;
+     }
+     sum = 0;
+     
+     for i in numbers.length
+        puts numbers[i]
+     end
+
+     end
+end
+
+// Total of array in javascript
+function sum(numbers){
+    let totalofArray = 0
+    for (let i = 0; i < numbers.length; i++){
+        if (numbers.length > 0){ 
+            totalofArray = totalofArray + numbers[i]
+        }   
+    }
+    return totalofArray 
+}
+sum([3,4,5])
+
+
+
+
+
