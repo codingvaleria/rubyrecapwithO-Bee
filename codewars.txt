@@ -44,3 +44,38 @@ def get_middle(s)
 end
 
 get_middle("Valeria")
+
+Remove string from spaces
+String#gsub - x.gsub(/[[:space:]]/, '') - removes all whitespace - replaces string for string
+String#tr - x.tr(" ", "") - best for specific character
+
+def summation(num)
+  sum = 0
+  num.times do |n|
+      sum += n+1
+  end
+  sum
+end
+
+#Variables
+    - constant
+    - variables
+        - variable naming
+        - defining global($) and local variables
+
+#data types
+    - Numbers, nil = no value, symbols, string(concatenation(+) or (<< variable_name <<) or interpolation#{}), Arrays, Hash(unique,key/value), boolean(true/false)
+#getting user input (gets)
+
+#Control flow
+#iteration/looping
+#Arrays and their methods
+
+"My cat is called " << cat_name << ". She is "  << cat_age.to_s << " years old"
+
+"My cat is called #{cat_name}. She is #{cat_age} years old"
+
+"Enter your pin no"
+pin = gets.chomp
+"What transaction would you like to do"
+transaction = gets.chomp
