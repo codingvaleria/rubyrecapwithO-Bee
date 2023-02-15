@@ -57,7 +57,7 @@ def summation(num)
   sum
 end
 
-#Variables
+#variables
     - constant
     - variables
         - variable naming
@@ -65,10 +65,13 @@ end
 
 #data types
     - Numbers, nil = no value, symbols, string(concatenation(+) or (<< variable_name <<) or interpolation#{}), Arrays, Hash(unique,key/value), boolean(true/false)
+
 #getting user input (gets)
 
 #Control flow
+    - if, if/else , ternary, case/when 
 #iteration/looping
+ - while, times
 #Arrays and their methods
 
 "My cat is called " << cat_name << ". She is "  << cat_age.to_s << " years old"
@@ -76,6 +79,20 @@ end
 "My cat is called #{cat_name}. She is #{cat_age} years old"
 
 "Enter your pin no"
-pin = gets.chomp
+pin = gets.chomp()
 "What transaction would you like to do"
-transaction = gets.chomp
+transaction = gets.chomp()
+
+&: 
+itself
+#group by - returns key ad values
+trasform_values
+
+if it rains carry umbrella
+elseif suuny  wear sunscreen 
+else if windy wear trousers
+else "perfect weather , do you"
+
+
+
+
