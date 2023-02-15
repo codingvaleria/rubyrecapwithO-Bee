@@ -1,0 +1,27 @@
+files i/o
+overriddenO?
+    - what comes in e.g keypress, mouseclick, reading
+What are I/O examples?
+    - result of input e.g results of a calculation, coffee, 
+
+IO Class
+- is a class in Ruby
+- is parent to file(for reading files) and sockets(for networks and servers) classes
+- provides a common interface(OOP- inheritance) for reading and writing(method) to IO objects
+- Works withe file descriptors
+- IO objects are based on file descriptors (a mapping between an integer and file name)
+
+File descriptors
+- every process has a table that maps open files
+- fd (file descriptor)- unique values rep each running process
+- every process starts with 3 standard fds- stdin, stdout & stderr
+
+
+Operations
+    open/Close
+    read
+    write
+
+
+fd = IO.sysopen('/dev/null', 'w')
+=> 5 
