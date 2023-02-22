@@ -1,0 +1,79 @@
+What is OOP?
+    - based on the concept of objects which contain data in form of attributes and properties and procedures known as methods.
+    - its about structuring code so that its functionality can be shared throughout the app
+    - makes programs more intuitive to design, faster to develop, more amenable to modification, and easier to understand.
+
+Procedural programming - build programs in sequential order and call methods when you want shared behavior between pages in the application.
+
+Basics
+1. Classes and instances
+2. The new class method
+3. Instance methods
+4. Local variables and instance variables
+5. Object Attributes
+
+What is an object?
+    -  is a thing with all the data and all the logic required to complete a task.
+
+Types of objects
+a) Primitive - integer, string, array
+b) Non primitive  
+
+
+Classes
+    - identify classes with Caps on name and camel case if they contain two words and class keyword
+    - they are blueprints to buikding our objects
+
+        e.g class Dog
+                # some code to describe a dog
+            end
+
+Instances
+    -  Instances refer to the individual objects produced from the class.
+    -   Different instances are different objects
+    - use the .new method to create instances
+
+The behavior of objects
+    - how do we ask this objects to do sth? - dot notation, e.g object-id
+    - .methods for defined methods
+
+Instance methods
+    - building our own methods i.e instance methods
+    - these methods will only be accessible to instances of our class
+    e.g class Dog
+          # Class body
+         # Instance Method Definition
+            def bark
+                puts "Woof!"
+            end
+        end
+    - cannot be called globally
+    - cannot be called without an instance
+
+Instance Variables
+    - How do we give objects attributes or properties? i.e instance variables
+    - is a variable that is accessible in any instance method in a particular instance of a class.
+
+class Fabric 
+def fabric_name(name)
+    name = "valeria"
+    material_name = name
+end
+
+def fabric_origin
+    material_name
+end
+
+cashmere = Fabric.new
+cashmere.fabric_name
+
+end
+
+
+def square_sum(numbers)
+  numbers.map {|n|
+    square = n * n
+    
+  }.sum
+  
+end
