@@ -21,7 +21,7 @@ while count < 5
     count = count + 1
 end
 
-until count < 5
+until count > 5
     puts count
     count += 1
 end
@@ -39,3 +39,4 @@ nums.each do |nums|
 end
 
 # absolute will always return a positive integer
+
