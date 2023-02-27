@@ -94,5 +94,13 @@ else if windy wear trousers
 else "perfect weather , do you"
 
 
+words = "Valeria is a great dancer"
 
-
+valeria a dancer is great
+def count
+i = 0
+while i <= 5
+    puts i
+    i = i + 1
+end
+end
