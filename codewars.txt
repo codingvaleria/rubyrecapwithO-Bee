@@ -104,3 +104,15 @@ while i <= 5
     i = i + 1
 end
 end
+
+Debug: ALways increment
+def create_array(n)
+  res=[]
+  i=1
+  while i <= n
+    i+=[i]
+    res = res + [i]
+    
+  end
+ return res
+end
