@@ -65,6 +65,12 @@ Local Variables
 Defining setter and getter methods
 - to be able to set attributes to instances of our classes, we create setter methods which take an argument and set the instance variable equal to that value.
 
-- we create the getter method for the objects to kow the value of their attributes. the getter method witll return the value of the instance variable
+- we create the getter method for the objects to know the value of their attributes. the getter method will return the value of the instance variable
+
+initialization
+    - called when creating an object
+        def initialize()
+            some code
+        end
 
 
