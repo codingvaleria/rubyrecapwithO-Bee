@@ -74,3 +74,35 @@ initialization
         end
 
 
+Self in Ruby
+- is a variable pointing to the object currently executing the code.
+- is a very important concept and a powerful tool of abstraction that makes our objects self-aware. 
+-Only available in the context of a class
+-referencing the calling object
+
+
+
+Class Method
+- operated by class itself
+- uses self. on the method name
+        def self.method_name
+            code
+        end
+
+for a bunch of methods
+
+    class << self
+        def method_name
+            @@variable
+        end
+
+        def all
+            @@variable
+        end 
+
+instance methods
+-operated by instances on themselves
+
+-Class variable
+ - two @@
+ -defined within the class 
