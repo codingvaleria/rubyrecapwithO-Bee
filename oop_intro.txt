@@ -71,6 +71,7 @@ Local Variables
 Class variable
 - @@
 - restricted to the class
+- is accessible to child classes
 - 
 
 Global variable
@@ -126,3 +127,35 @@ instance methods
         @@variable_name = value
 
 
+Remembering objects
+its about keeping track of instances that are created
+- store values of self on an array and read them by calling methods on them
+
+Classes and modules are treated as objects in Ruby
+To align a block of self methods withoud calling self in every method. use this syntax
+
+Class Dog
+
+    class << self
+        def bark
+            "woof"
+        end
+
+        def chew
+            "chew"
+        end
+    end
+end
+
+all codes withing the block could also be written as 
+
+    class Dog 
+        def self.bark
+            "woof"
+        end
+
+        def self.chew
+            "chew"
+        end
+
+    end
