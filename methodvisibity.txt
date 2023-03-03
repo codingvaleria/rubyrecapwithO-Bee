@@ -1,0 +1,17 @@
+Public methods
+- All methods in ruby by default are Public
+- Can be called outside class definition
+- they are called by an explicit receiver(i.e an instance)
+
+Private methods
+- use private keyword,
+- all methods after the keyword become private
+- cannot be called outside class definition
+- can be called inside public methods
+- can only be called within the context of the defining class , the receive is always self
+
+Protected methods
+- has to be called on an object. (self)
+- uses protected keyword
+- 
+
