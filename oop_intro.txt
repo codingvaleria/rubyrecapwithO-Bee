@@ -159,3 +159,10 @@ all codes withing the block could also be written as
         end
 
     end
+
+Inheritance
+    <
+    super class
+    sub class
+    overide methods - by redefining methods within the subclass
+    add functionality - by defining new methods in the subclass
