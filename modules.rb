@@ -17,3 +17,12 @@ include Tools
 Tools.say_bye("Mike")
 Tools.say_hi("Nonni")
 
+#Nesting Modules
+module Sale
+    module FormBuilder
+        def self.call(params)
+            "Params in module: #{params}"
+        end
+    end
+end
+Sale::FormBuilder.call("some data")
