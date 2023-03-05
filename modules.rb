@@ -12,3 +12,8 @@ module Tools
 
 end
 
+#accessing methods within the module
+include Tools
+Tools.say_bye("Mike")
+Tools.say_hi("Nonni")
+
