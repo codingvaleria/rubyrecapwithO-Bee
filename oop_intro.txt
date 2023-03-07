@@ -166,3 +166,36 @@ Inheritance
     sub class
     overide methods - by redefining methods within the subclass
     add functionality - by defining new methods in the subclass
+
+
+
+Recap on modules and Inheritance
+module Publisher
+    def publisher 
+        "The publisher is Macmillan"
+        end
+end
+
+class Books
+    include Publisher
+    def pages(no_of_pages)
+        "The no. of pages is " + no_of_pages.to_s
+    end
+end
+
+
+class Literature < Books
+    def author(name)
+        "The author is #{name}"
+    end
+
+    class << self
+        def type_of_literature
+            "oral"
+        end
+  
+        def orator(name)
+            name
+        end
+    end
+ end
