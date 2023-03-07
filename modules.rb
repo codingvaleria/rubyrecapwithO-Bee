@@ -20,9 +20,29 @@ Tools.say_hi("Nonni")
 #Nesting Modules
 module Sale
     module FormBuilder
-        def self.call(params)
-            "Params in module: #{params}"
+        class << self
+            def call(params)
+                subtotal = params[:subtotal]
+                state_name = params[:state_name]
+
+                tax_amount = subtotal * self.tax_rate(state_name)
+                subtotal + tax_amount
+            end
+
+            private
+            def tax_rate(state)
+                if state == "AZ"
+                    0.065
+                elsif state == "CA"
+                    0.087
+                end
+            end
         end
     end
 end
-Sale::FormBuilder.call("some data")
+
+form_data  = {
+    subtotal: 5.5,
+    state_name: "AZ"
+}
+Sale::FormBuilder.call(form_data)
