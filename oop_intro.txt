@@ -199,3 +199,31 @@ class Literature < Books
         end
     end
  end
+
+ Polymorphism 
+ - an inheriting class changes the behaviour of a specific method or behaviour in parent class
+ - by default this overides a given method.
+ - to get output of both methods use super keyword
+
+ class Books
+    attr_accessor :title, :description
+
+    def initialize(title,description)
+
+        @title = title
+        @description = description
+       
+    end
+
+    def book_author(name)
+        puts "book_author is " + name
+    end
+end
+
+class BookPublisher < Books
+
+     def book_author(name)
+        super
+        puts "book_author is not " + name
+     end
+end
