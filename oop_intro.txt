@@ -235,3 +235,9 @@ class BookPublisher < Books
         super
      end
 end
+
+Extend  vs include method vs prepend
+- include gives accesss to a module on instance level and inserts the module before the object parent [Person, SayHello, Object, Kernel, BasicObject]
+- extend treats methods as if they were class methods
+
+
