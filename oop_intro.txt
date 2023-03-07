@@ -205,7 +205,7 @@ class Literature < Books
  - by default this overides a given method.
  - to get output of both methods use super keyword
 
- class Books
+class Books
     attr_accessor :title, :description
 
     def initialize(title,description)
@@ -220,10 +220,18 @@ class Literature < Books
     end
 end
 
+module BookLiterature
+    def book_author(name)
+        "the name of the author is " + name
+    end
+end
+
 class BookPublisher < Books
+    include BookLiterature
 
      def book_author(name)
         super
         puts "book_author is not " + name
+        super
      end
 end
