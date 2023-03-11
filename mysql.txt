@@ -1,0 +1,48 @@
+Terms
+1. Database 
+2. Column - contains date of one data type
+3. Table - 
+4. Row -a sub section of a column with data of different data type
+5. Primary Key - a unique column with a value
+6. Foreign Key - sth that links two tables together
+7. Compound key - a key consisits of mulitple columns
+8. Index - 
+9. Redundancy - is the idea of storing data more than once
+
+open on terminal : = mysql -u root -p
+
+view databases = SHOW databases;
+    -view columns
+    -view tables 
+
+adding users/deleting users
+    - delete
+    - Flush privileges
+    - adding
+
+-Creating, selecting and deleting databases
+
+-creating tables 
+    - reading tables
+    - readinga  structure of tables 
+
+- Inserting data into tables
+- Select statement/Read from myql dbs 
+
+
+MySQL Data Types
+- INT 
+    -small, big, double, 
+
+-FLOAT (M, D) m is length and d number of desimals
+
+-DATE -     yy-mm-dd
+
+-DATETIME yy-mm-dd hh:mm:ss 
+
+-CHARM(M) - a fixed length string 1- 255 characters
+
+VARCHAR(M)- a variable length string, length must be specified.
+
+BLOB or TEXT - used to store texts or binary data. such as images
+
