@@ -1,4 +1,4 @@
-1. #How the self word works
+# 1. #How the self word works
 # class Menu
 #     def show_self
 #         self
@@ -10,7 +10,7 @@
 
 
 
-2. #How the use of self within an instance method
+# 2. #How the use of self within an instance method
 
 # class Dog
 #     attr_accessor :name, :owner
@@ -34,21 +34,53 @@
 
 
 
-class Person
-    attr_accessor :name
+# class Person
+#     attr_accessor :name
 
-    def initialize(name)
-        @name = name
+#     def initialize(name)
+#         @name = name
+#     end
+
+#     def sing
+#         "I'm #{self.name} , and I'm singing"
+#     end
+# end
+
+# seth = Person.new("Seth")
+# seth.sing
+
+
+
+class Bicycle
+  attr_accessor :tire, :tire_size, :gears
+
+  @@styles=[]
+  @@bikes=[]
+
+    def initialize(tire, gears, style)
+      @tire = tire
+      @gears = gears
+      @style = style
+      @@styles << style
+      @@bikes << self
     end
 
-    def sing
-        "I'm #{self.name} , and I'm singing"
+    def tire_size
+      self.tire
+    end
+
+    def self.styles
+        @@styles
+    end
+    
+    def self.bikes
+        @@bikes
     end
 end
 
-seth = Person.new("Seth")
-seth.sing
-
-
-
-
+mongoose = Bicycle.new(4, 10, "BMX")
+mamba = Bicycle.new(3, 9, "Mamba")
+puts mongoose.tire_size = 5
+puts mongoose.gears
+puts Bicycle.bikes
+puts Bicycle.styles
