@@ -1,0 +1,27 @@
+types
+1. global variables 
+    - begin with $
+    - has nil value
+    - can be accessed anywhere inthe program
+
+2. Class variables 
+    - @@
+    - must be initialized
+    - are shared among descendants of the class or module to which they are defined
+
+3. instance variables
+    - @
+    - can be accessed by any particular instance of that class
+    - an unitialized has a value of nil
+
+4. Local variables
+    - starts with lowercase or underscore (_)
+    - only accessible within its block of initialization
+    
+
+Ruby Constants
+    -They begin with an uppercase letter
+    -Constants defined within a class or module can only be accessed within that module or class and those defined outside can be accessed globaly
+    -cannot be declared again
+    
+    
