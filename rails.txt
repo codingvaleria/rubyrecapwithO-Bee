@@ -1,0 +1,41 @@
+data types
+ 1. numbers - integer  & floats
+ 2. strings 
+ 2. boolean true or false
+ 4. hashes - objects uniques keys & values; differnt data types; attributes-key, values -valus 
+ 5. arrays - collection of data can be of different types
+ 6. symbols- :
+ 7. nil - no value
+
+
+ #everything in ruby is an objects 
+
+
+working with numbers
+    concatenation +
+  interpolation - variable;  delimiters 
+
+control flow statements
+1. if - condition
+if else, elsif ,
+case when
+ternary
+until
+unless
+while (0-9)
+do while 
+
+
+
+operators
+and ; true is both are true
+or ; if either is true
+
+case weather
+    when "cloudy" then "its cloudy"
+    when "sunny" then "its sunny"
+    else "the weatehr is perfect"
+ end
+ 
+
+
