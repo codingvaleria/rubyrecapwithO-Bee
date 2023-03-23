@@ -1,0 +1,28 @@
+Modules 
+    - are a way of grouping toether methods,classes and Constants
+    -are benficial for namespacing and prevents clashes
+    -implements the mixin facility(using many modules)
+    - naming, -just like classes
+    - you can reference a constant using the module name and two colons
+
+    - require statement(require_relative "file_name")
+        - essential to use modules in other files
+        -used with include too 
+
+
+    - to embed a module in a class use the include statement
+
+    module Module_name
+        BAD = 1
+        
+        def Module_name.Method_name(x)
+            code
+        end
+
+    end
+
+    #accessing constant within module
+    puts Module_name::BAD
+
+    #accessing method within module
+    Module_name.Method_name(Module_name::BAD)
