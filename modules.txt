@@ -12,17 +12,17 @@ Modules
 
     - to embed a module in a class use the include statement
 
-    module Module_name
+    module ModuleName
         BAD = 1
         
-        def Module_name.Method_name(x)
+        def ModuleName.method_name(x)
             code
         end
 
     end
 
     #accessing constant within module
-    puts Module_name::BAD
+    puts ModuleName::BAD
 
     #accessing method within module
-    Module_name.Method_name(Module_name::BAD)
+    ModuleName.Method_name(ModuleName::BAD)
