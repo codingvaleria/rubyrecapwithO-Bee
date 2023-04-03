@@ -31,7 +31,7 @@ end
 b1 = Bungalow.new
 puts b1.has_floor
 
-#when including modules, they take priority over super class
+#when including modules, they take priority over parent class
 
 module Property
     def has_floor
